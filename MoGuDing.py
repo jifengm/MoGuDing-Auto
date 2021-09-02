@@ -287,7 +287,7 @@ def main():
 
         hourNow = datetime.datetime.now(pytz.timezone('PRC')).hour
         #9点前为上班打卡   1为上班   0为下班
-        if hourNow <= 9:
+        if hourNow <= 12:
             signIn(1)
         # 17点后为下班打卡
         elif hourNow >= 17:
